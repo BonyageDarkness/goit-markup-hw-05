@@ -553,3 +553,229 @@ section {
 .social-media {
     fill: #f4f4fd;
 }
+
+.footer-sub {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input::placeholder {
+    color: #ffffff;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.footer-form-btn {
+    height: 40px;
+    min-width: 165px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #404BBF;
+}
+
+.sub-icon {
+    color: #FFF;
+    margin-left: 16px;
+}
+
+
+
+/* -------MODAL-------- */
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+} */
+
+.modal {
+    width: 408px;
+    min-height: 584px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FCFCFC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.modal-close-btn {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.modal-close-icon {
+    border-radius: 4px;
+}
+
+.modal-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding: 72px 24px 24px;
+}
+
+.modal-fieldset{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border: none;
+    padding: 0px 24px 24px;
+    
+}
+
+.modal-input {
+    display: flex;
+    width: 360px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    margin-top: 4px;
+    padding-left: 38px;
+    outline: transparent;
+}
+
+.modal-label {
+    display: block;
+    width: 41px;
+    color: #8E8F99;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-input:focus{
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus + .modal-icon{
+    fill: #4D5AE5;
+    stroke: #4D5AE5;;
+}
+
+.modal-text {
+    display: flex;
+    width: 360px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    margin-top: 4px;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+}
+
+
+
+.label-policy {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: #8E8F99;
+    display: flex;
+    align-items: center;
+}
+
+.label-policy a {
+    color: #4D5AE5;
+    text-decoration-line: underline;
+}
+
+.label-policy span {
+    width: 16px;
+    height: 16px;
+    stroke-width: 1px;
+    stroke: rgba(46, 47, 66, 0.40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.check-input:checked + .label-policy span{
+    background-color: #404BBF;
+    border: none;
+    fill: #FFFFFF;
+} 
